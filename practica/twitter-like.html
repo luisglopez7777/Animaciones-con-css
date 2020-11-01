@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Like</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .like {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            animation-name: like;
+            animation-duration: 1s;
+            animation-timing-function: steps(29);
+            background-image: url('corazon.png');
+            background-position: -2800px 0;
+            background-size: 1450px 50px;
+
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes like {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -2900px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tweet-box">
+        <div class="like"></div>
+    </div>
+
+</body>
+
+</html>
